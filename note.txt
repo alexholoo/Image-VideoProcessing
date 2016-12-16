@@ -17,3 +17,18 @@ computer vision: identify all actions in the video. know what's happening
 medical and biological images
 	brain research
 	HIV research
+
+Chapter 2. Digital Image Fundamentals
+Image Sampling & Quantization, Discrete,
+
+3D info:
+	Sensor array, e.g. 512*512, Pixel, AD conversion,
+		Spatial quantization
+		resolution: detail vs coarse
+	Gray scale, 256,
+		Gray value quantization
+		gray level: 256, 128, 64, 32, 16, 8, 4, 2 (black & white)
+
+Pro Cameras: RGB, Red, Green, Blue.
+Consumer Camera s: Mosaic sensors & Interpolation
+Images -> Video, ~30*3 images per second.
