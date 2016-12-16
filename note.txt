@@ -107,3 +107,13 @@ large DCT.
 2. The magic approximation of DCT to KLT occurs when the Markovian condition
 applies. This condition applies only to regions that is not too small and also
 not too big where there is not much correlation between pixels.
+
+
+p011 Quantization
+Quantize the coefficients, T(u,v), after the DCT.
+	Uniform quantization
+		simple
+		used by JPEG
+	Max-Lloyd Optimal Quantizer
+		Error minimization: (s_i - t_i)^2
+		Probability distribution
