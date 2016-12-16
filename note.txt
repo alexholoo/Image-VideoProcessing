@@ -127,3 +127,7 @@ Predictive lossless compression
 
 Temperal prediction (MPEG)
 	Motion vector, similar regions
+
+
+P013 Bonus: Run-length coding
+Binary image, geometric images
