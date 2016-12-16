@@ -66,3 +66,10 @@ Huffman coding
 		compression ratio
 		Entropy (H) = -SUM_symbols^(p(s)*log_2^(p(s)))
 			average code length (Shannon's 1st theorem)
+
+
+p009 JPEG 8*8 blocks
+Input image (M*N) -> Construct n*n subimages -> Forward transform ->...
+JPEG: 8*8 blocks
+	JPEG is color blind
+	RGB<-3*3 conversion matrix->YCbCr
