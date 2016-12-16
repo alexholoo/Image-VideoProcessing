@@ -27,8 +27,31 @@ Image Sampling & Quantization, Discrete,
 		resolution: detail vs coarse
 	Gray scale, 256,
 		Gray value quantization
+			e.g. 7/2*2 = 6
 		gray level: 256, 128, 64, 32, 16, 8, 4, 2 (black & white)
 
 Pro Cameras: RGB, Red, Green, Blue.
 Consumer Camera s: Mosaic sensors & Interpolation
 Images -> Video, ~30*3 images per second.
+
+Week 2
+vid 7 image compression (chapter 8)
+why?
+1000*1000 pixels * 24 bits * 30 frames/s * 60 s/min * 120 min/h => a 2h movie =>
+very large number!!! => image & video compression
+
+Redundancy: few colors, same color in regions, irrelevant info.
+
+Image compression standards, formats and containers
+	Image: JPEG, JPEG-LS, JPEG-2000, etc.
+	Video: MPEG-1, MPEG-2, MPEG-4, etc.
+
+image -> f(x,y) or f(x,y,t) -> Mapper (array) -> Quantizer (info loss)
+-> Symbol coder (information theory, storage | transmission) =>
+Symbol decoder -> Inverse mapper -> f`(x,y) or f`(x,y,t)
+
+e.g. JPEG
+Input image (M*N) -> Construct n*n subimages -> Forward transform -> Quantizer
+-> Symbol encoder -> Compressed image
+Compressed image -> symbol decoder -> inverse transform -> Merge n*n subimages
+-> decompressed image
