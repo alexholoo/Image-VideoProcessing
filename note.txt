@@ -1,0 +1,19 @@
+Digital Image Processing:
+Course: https://www.youtube.com/playlist?list=PLZ9qNFMHZ-A79y1StvUUqgyL-O0fZh2rs
+
+Image and Video Processing,
+	from Mars to Hollywood, with a stop at the hospital
+	Guillermo Sapiro @Duke Univ.
+  www.ImageProcessingPlace.com
+
+compression
+segementation
+mars
+consumer image and
+	running and jumping, dispit the background, adobe
+
+computer vision: identify all actions in the video. know what's happening
+
+medical and biological images
+	brain research
+	HIV research
