@@ -131,3 +131,16 @@ Temperal prediction (MPEG)
 
 P013 Bonus: Run-length coding
 Binary image, geometric images
+
+
+Week 3
+
+P014 Intro to image enhancement
+
+threshold transformation (focus, highlight)
+
+s = L - r (dark field, bright field)
+
+gamma correction: s = C*r^gamma
+
+intensity transformations & spatial filtering
