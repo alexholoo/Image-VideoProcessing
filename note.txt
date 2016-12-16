@@ -117,3 +117,13 @@ Quantize the coefficients, T(u,v), after the DCT.
 	Max-Lloyd Optimal Quantizer
 		Error minimization: (s_i - t_i)^2
 		Probability distribution
+
+
+p012 JPEG-LS & MPEG
+Predictive lossless compression
+	predictor
+	error image
+	Haffman coding
+
+Temperal prediction (MPEG)
+	Motion vector, similar regions
