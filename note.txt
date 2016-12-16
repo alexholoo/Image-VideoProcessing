@@ -55,3 +55,14 @@ Input image (M*N) -> Construct n*n subimages -> Forward transform -> Quantizer
 -> Symbol encoder -> Compressed image
 Compressed image -> symbol decoder -> inverse transform -> Merge n*n subimages
 -> decompressed image
+
+
+p008 Huffman coding
+Picture Lina, frequency count, histogram, probability
+Huffman coding
+	Variable length code: higher the probability, lower the length
+	prefix-free code
+	theorem: shortest coding length on average
+		compression ratio
+		Entropy (H) = -SUM_symbols^(p(s)*log_2^(p(s)))
+			average code length (Shannon's 1st theorem)
