@@ -73,3 +73,37 @@ Input image (M*N) -> Construct n*n subimages -> Forward transform ->...
 JPEG: 8*8 blocks
 	JPEG is color blind
 	RGB<-3*3 conversion matrix->YCbCr
+
+
+p010 The discrete cosine transform (DCT)
+
+Error: (root) Mean Square Error (MSE)
+
+Transform n*n pixels subimages
+
+Kahunen-Loeve Transform (KLT)
+	note: transform is nothing but a multiplication by a matrix
+	Put lots of info on the 1st coefficient, a bit more info in the 2ed, which
+	is independent of the 1st, and so on...
+
+Discrete Cosine Transform (DCT)
+	basis functions n*n images
+	decompose n*n subimage into a linear combination of these basis images
+		- if the image is flat, then T(u=0,v=0) !=0, the others will be 0;
+		- if the image has lots of variations, then u will have coefficients for
+		other T(u,v)s. (kind of like in frequency domain in FFT)
+	these basis images in DCT are constant, not in KLT (therefore expensive at
+	runtime).
+
+Why DCT?
+1. In many cases a DCT is exactly equal to a KLT (neighboring pixels
+are depending on each other in a particular form) Markovian
+2. Boundary conditions: DCT has continuity between neighbor, while FFT
+asks for periodicity.
+
+Why 8*8?
+1. computationally cheaper to do multiple small (n in n*n) DCT than to do one
+large DCT.
+2. The magic approximation of DCT to KLT occurs when the Markovian condition
+applies. This condition applies only to regions that is not too small and also
+not too big where there is not much correlation between pixels.
