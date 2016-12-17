@@ -152,4 +152,6 @@ P015 Enhancement Histogram modification (matlab demo)
 	histogram equilization
 
 P016 Histogram equilization
-  
+
+P017 Histogram matching
+  	reverse histogram equilization
