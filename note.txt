@@ -144,3 +144,12 @@ s = L - r (dark field, bright field)
 gamma correction: s = C*r^gamma
 
 intensity transformations & spatial filtering
+
+
+P015 Enhancement Histogram modification (matlab demo)
+	inverse
+	histogram
+	histogram equilization
+
+P016 Histogram equilization
+  
